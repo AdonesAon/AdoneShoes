@@ -1,0 +1,475 @@
+* {
+  box-sizing: border-box;
+}
+  
+body{
+  font-family: 'Oxygen', sans-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.topo{
+  padding: 10px;
+  text-align: center;
+  background: #2c6ec0;
+}
+
+.menu{
+  overflow: hidden;
+  background-color: #2c6ec0;
+  flex-direction: column;
+}
+  
+.menu a, .dropbtn{
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.menu a:hover:not(.active){
+  background-color: #95bae7;
+  color: #2c6ec0;
+}
+
+.active {
+  background-color: #30cf1b;
+  
+}
+
+.dropbtn {
+  background-color: #2c6ec0;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #95bae7;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  height:auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction:table;
+  flex-wrap: wrap;
+  align-items:center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 35px;
+  padding: 30px;
+  width: 25%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 30px;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction:table;
+  flex-wrap:wrap;
+  flex: auto;
+  align-items:center;
+}
+
+.flex-container2 > div {
+  background-color: #f1f1f1;
+  margin: 5%;
+  padding: 20px;
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-direction: table;
+  flex-wrap: wrap;
+  justify-content:center;
+  color:white;
+}
+
+.flex-container3 > div {
+  background-color: transparent;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.texto1{
+  font-size:16pt;
+  padding:1%;
+}
+
+
+.titulo{
+  font-size: 25pt;
+  text-align: center;
+}
+
+.subtitulo{
+  font-size: 20pt;
+  text-align: center;
+}
+
+.produto{
+  border: 2px solid #2c6ec0;
+  box-shadow: 5px 5px rgb(224, 224, 224);
+  border-style:outset;
+  background: #cbd7e5;
+  width:25%;
+  height:40%;
+  position:relative;
+  padding:1%;
+  text-align:center;
+  display:table;
+  justify-content:center;
+}
+
+.descricao{
+  font-size: 16pt;
+  color:#000;
+}
+
+.desconto{
+  font-size:10pt;
+  color:grey;
+  text-decoration:line-through;
+}
+
+.preco{
+  font-size:16pt;
+  color:#2c6ec0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  height:auto;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+  
+.publicidade{
+  background-color: grey;
+  width:25%;
+  height:25%;
+  position:relative;
+}
+
+.sobre{
+  background-image: url(imagem/rack-cheio-de-sapatos-em-uma-casa-moderna.jpg);
+  background-size: cover;
+  padding:10px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+  
+.linha::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+.rodape{
+  padding: 20px;
+  background: #2c6ec0;
+  margin-top: 20px;
+}
+  
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .menu a, .produto{   
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+}
+  
+  
+@media screen and (max-width: 400px) {
+  .menu a, .produto{
+    float: none;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 0.6em;
+  color: black;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 12pt;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  align-content:center;
+}
+.btn:hover, .btn:focus {
+  color:black;
+  outline: 0;
+}
+
+
+.fourth {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.fourth:hover {
+  box-shadow: 0 0 10px 10px #2c6ec0 inset;
+}
+
+.totalcolumn{
+  float: left;
+  width: 100%;
+  height:auto;
+  background-color: #f1f1f1;
+  padding: 0px;
+  text-align: center;
+}
+
+
+.frame {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  left:50%;
+  padding:5%;
+}
+
+button {
+  margin: 0px;
+  padding:10%;
+}
+.custom-btn {
+  color: #fff;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-1 {
+  background: #14b621;
+  background: linear-gradient(0deg, rgb(88, 207, 114) 0%, #14b621 100%);
+  width: 100%;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-1 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+.btn-1:before,
+.btn-1:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: #14b621;
+  transition: all 0.3s ease;
+}
+.btn-1:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-1:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-1:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-1:hover:before {
+  height: 100%;
+}
+.btn-1:hover:after {
+  width: 100%;
+}
+.btn-1 span:hover{
+   color: #14b621;
+}
+.btn-1 span:before,
+.btn-1 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: #14b621;
+  transition: all 0.3s ease;
+}
+.btn-1 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-1 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-1 span:hover:before {
+  height: 100%;
+}
+.btn-1 span:hover:after {
+  width: 100%;
+}
+
+.btn-2 {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, #2c6ec0 100%);
+  width: 100%;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+}
+.btn-2 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-2:before,
+.btn-2:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: #2c6ec0;
+  transition: all 0.3s ease;
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-2:hover:before {
+  height: 100%;
+}
+.btn-2:hover:after {
+  width: 100%;
+}
+.btn-2 span:hover{
+   color: #2c6ec0;
+}
+.btn-2 span:before,
+.btn-2 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: #2c6ec0;
+  transition: all 0.3s ease;
+}
+.btn-2 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-2 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2 span:hover:before {
+  height: 100%;
+}
+.btn-2 span:hover:after {
+  width: 100%;
+}
+
+.caixa{
+  background-color: #f1f1f1;
+  padding:3%;
+  margin:2% 20% 2% 20%;
+  border-radius: 1%;
+}
+
+select {
+  width: 15%;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+}

@@ -227,19 +227,21 @@ a {
 }
   
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn, .menu a, .produto{   
+  .leftcolumn, .rightcolumn, .menu a, .produto, .flex-container{   
     width: 100%;
     padding: 0;
     flex-direction: column;
+    justify-content: center;
   }
 }
   
   
 @media screen and (max-width: 400px) {
-  .menu a, .produto{
+  .menu a, .produto, .flex-container{
     float: none;
     width: 100%;
     flex-direction: column;
+    justify-content: center;
   }
 }
 

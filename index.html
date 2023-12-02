@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head><title>AdoneShoes</title>
+<link rel="icon" type="image/x-icon" href="imagem/favicon.ico">
 <link rel="stylesheet" type="text/css" href="estilo1.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,147 +12,192 @@
 <body>
 
     <div class="topo">
-        <a href="index.html"><img src="imagem/AdoneShoes1.png" style="width: 20%;height: auto;"></a>
-    </div>
-	
-    <div class="menu">
-		<a href="#">Tênis Esportivos</a>
-		<a href="#">Sapatos Casuais</a>
-		<a href="#">Sapatos Sociais</a>
-		<a href="#">Sandálias</a>
-		<a href="#">Acessórios</a>
-		<a class ="active" href="login.html" style="float:right">Acesso</a>
-    </div>
+        <a href="index.html"><img src="imagem/AdoneShoes1.png" style="max-width: 250px;height: auto;"></a>
+	</div>
     
     <div class="linha">
 
-      <div class="leftcolumn">
+      	<div class="leftcolumn">
 
-        <div class="card">
+			<div class="card">
 
-            <div class="dropdown">
-				<button class="dropbtn">Por categoria</button>
-				<div class="dropdown-content">
-				<a href="#">Masculino</a>
-				<a href="#">Feminino</a>
-				<a href="#">Infantil</a>
+				<div id="mySidenav" class="sidenav" style="float:left;margin-left:0px;">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="cliente.html">Cadastrar Cliente</a>
+					<a href="funcionario.html">Cadastrar Funcionário</a>
+					<a href="produto.html">Cadastrar Produtos</a>
+					<a href="listar_cliente.php">Listar Clientes</a>
+					<a href="listar_funcionario.php">Listar Funcionários</a>
+					<a href="listar_produto.php">Listar Produtos</a>
 				</div>
-            </div>
-
-            <div class="titulo">Ofertas</div> <p>
-
-			<div class="flex-container">
-            <div class="produto"><a href="#">
-				<img src="imagem/prod2.webp" style="width:100%;height:auto;"><p>
-				<div class="descricao">Tênis Nike Revolution 6 Next Feminino</div><p>
-				<div class="desconto">De R$ 399,99 por</div><p>
-				<div class="preco">R$ 249,99</div></a>
-            </div>
-
-            <div class="produto"><a href="#">
-              <img src="imagem/prod3.webp" style="width:100%;height:auto;"><p>
-                <div class="descricao">Tênis Mizuno Wave Titan 2 - Masculino</div><p>
-                <div class="desconto">De R$ 379,99 por</div><p>
-                <div class="preco">R$ 249,99</div></a>
-            </div>
-
-            <div class="produto"><a href="#">
-              <img src="imagem/prod4.webp" style="width:100%;height:auto;"><p>
-                <div class="descricao">Tênis Adidas Coreracer<br> Masculino</div><p>
-                <div class="desconto">De R$ 219,99 por</div><p>
-                <div class="preco">R$ 199,49</div></a>
-            </div>
-			
-			<div class="produto"><a href="#">
-				<img src="imagem/prod5.webp" style="width:100%;height:auto;"><p>
-				<div class="descricao">Tênis Skechers Go Run Pulse Tourista Masculino</div><p>
-				<div class="desconto">De R$ 549,99 por</div><p>
-				<div class="preco">R$ 370,49</div></a>
-            </div>
-			
-			<div class="produto"><a href="#">
-				<img src="imagem/prod6.webp" style="width:100%;height:auto;"><p>
-				<div class="descricao">Tênis <br>Olympikus <br>Mood<br> Masculino</div><p>
-				<div class="desconto">De R$ 200,00 por</div><p>
-				<div class="preco">R$ 119,99</div></a>
-            </div>
-			
-			<div class="produto"><a href="#">
-				<img src="imagem/prod7.webp" style="width:100%;height:auto;"><p>
-				<div class="descricao">Tênis Nike Air <br>Max Alpha Trainer 5 Masculino</div><p>
-				<div class="desconto">De R$ 799,99 por</div><p>
-				<div class="preco">R$ 629,99</div></a>
-            </div>
-			
-			</div>
-
-        </div>
-
-        <div class="card">
-			<div class="titulo">MAIS VENDIDOS</div> <p>
-			
-			<div class="flex-container">
-			
-			<div class="produto"><a href="#">
-				<img src="imagem/prod8.webp" style="width:100%;height:auto;"><p>
-				<div class="descricao">Tênis Nike<br> Defy All Day<br> Masculino</div><p>
-				<div class="desconto">De R$ 599,99 por</div><p>
-				<div class="preco">R$ 419,99</div></a>
-            </div>
-			
-			<div class="produto"><a href="#">
-				<img src="imagem/prod9.webp" style="width:100%;height:auto;"><p>
-				<div class="descricao">Tênis Adidas Breaknet Feminino</div><p>
-				<div class="desconto">De R$ 299,99 por</div><p>
-				<div class="preco">R$ 249,99</div></a>
-            </div>
-			
-			<div class="produto"><a href="#">
-				<img src="imagem/prod10.webp" style="width:100%;height:auto;"><p>
-				<div class="descricao">Tênis Nike<br> Downshifter 12<br> Feminino - Rosa</div><p>
-				<div class="desconto">De R$ 449,99 por</div><p>
-				<div class="preco">R$ 329,99</div></a>
-            </div>
-			
-			</div>
-			
-        </div>
-      </div>
-
-      <div class="rightcolumn">
-        <div class="card">
-          <div class="publcidade">
-		  <img src="imagem/publi1.gif" style="width:100%;height:auto;">
-		  <img src="imagem/publi2.webp" style="width:100%;height:auto;">
-		  <img src="imagem/publi3.gif" style="width:100%;height:auto;">
-		  <img src="imagem/publi4.gif" style="width:100%;height:auto;">
-		  <img src="imagem/publi5.gif" style="width:100%;height:auto;">
-          </div>
-        </div>
-
-        <div class="card">
-
-			<h3>Nos siga nas Redes Sociais</h3>
-	
-				<a href="#"><img src="imagem/twitter_5969020.png" style="width:15%;height:15%;margin-left:12%;"></a>
-				<a href="#"><img src="imagem/facebook_3670144.png" style="width:15%;height:15%;margin-left:12%;"></a>
-				<a href="#"><img src="imagem/instagram_3955024.png" style="width:15%;height:15%;margin-left:12%;"></a>
 		
-        </div>
+				<div id="main">
+					<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Menu</span>
+				</div>
+		
+				<script>
+					function openNav() {
+						document.getElementById("mySidenav").style.width = "250px";
+						document.getElementById("main").style.marginLeft = "250px";
+					}
+					
+					function closeNav() {
+						document.getElementById("mySidenav").style.width = "0";
+						document.getElementById("main").style.marginLeft= "0";
+					}
+				</script>
+					
+				<div class="flex-container1">
 
-        <div class="card">
-          <h2>Sobre a AdoneShoes</h2>
-          <p>Somos uma empresa voltada para a venda de calçados e acessórios, nosso compromisso é oferecer os melhores preços de produtos...</p>
-        </div>
+					<div class="tracking-out-contract" style="font-size: 30px;font-family: Oxygen;text-align: center;">
+						Modelos novos
+					</div>
 
-      </div>
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 6</div>
+							<img src="imagem/prod1.webp" style="width:100%">
+							<div class="text">Tênis Nike Revolution 6 Next Nature Masculino</div>
+						</div>
+						
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 6</div>
+							<img src="imagem/prod2.webp" style="width:100%">
+							<div class="text">Tênis Adidas Endo Run Feminino</div>
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 6</div>
+							<img src="imagem/prod3.webp" style="width:100%">
+							<div class="text">Tênis Adidas Endo Run Masculino</div>
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">4 / 6</div>
+							<img src="imagem/prod4.webp" style="width:100%">
+							<div class="text">Tênis Nike Downshifter 12 Feminino</div>
+						</div>
+						
+						<div class="mySlides fade">
+							<div class="numbertext">5 / 6</div>
+							<img src="imagem/prod5.webp" style="width:100%">
+							<div class="text">Tênis Nike Downshifter 12 Masculino</div>
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">6 / 6</div>
+							<img src="imagem/prod6.webp" style="width:100%">
+							<div class="text">Tênis Asics Dynablast 3 Feminino</div>
+						</div>
+						
+					</div><br>
+						
+						<div style="text-align:center">
+							<span class="dot"></span> 
+							<span class="dot"></span> 
+							<span class="dot"></span> 
+							<span class="dot"></span> 
+							<span class="dot"></span> 
+							<span class="dot"></span> 
+						</div>
+
+						<script>
+							let slideIndex = 0;
+							showSlides();
+							
+							function showSlides() {
+							  let i;
+							  let slides = document.getElementsByClassName("mySlides");
+							  let dots = document.getElementsByClassName("dot");
+							  for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+							  }
+							  slideIndex++;
+							  if (slideIndex > slides.length) {slideIndex = 1}    
+							  for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							  }
+							  slides[slideIndex-1].style.display = "block";  
+							  dots[slideIndex-1].className += " active";
+							  setTimeout(showSlides, 5000); 
+							}
+							</script>
+
+				</div>					
+
+			</div>
+
+			<div class="card">
+
+
+				<div class="tracking-out-contract" style="font-size: 30px;font-family: Oxygen;text-align: center;">
+					Os mais vendidos
+				</div>
+
+				<div class="flex-container4">
+
+					<div class="produto">
+						<img src="imagem/prod7.webp" style="width: 100%;height:auto;">
+						<div class="desc">Tênis Adidas Breaknet Feminino</div>
+					</div>
+
+					<div class="produto">
+						<img src="imagem/prod8.webp" style="width: 100%;height:auto;">
+						<div class="desc">Tênis FILA Grand Prix Feminino</div>
+					</div>
+
+					<div class="produto">
+						<img src="imagem/prod9.webp" style="width: 100%;height:auto;">
+						<div class="desc">Tênis Nike Air Max Impact 4 Masculino</div>
+					</div>
+
+				</div>
+
+				<div class="imagem1"></div>
+			
+			</div>
+
+		</div>
+
+		<div class="rightcolumn">
+
+			<div class="card">
+				<div class="publcidade">
+				<img src="imagem/publi1.gif" style="width:100%;height:auto;">
+				<img src="imagem/publi2.webp" style="width:100%;height:auto;">
+				<img src="imagem/publi3.gif" style="width:100%;height:auto;">
+				</div>
+			</div>
+
+			<div class="card">
+
+				<h4>Nos siga nas Redes Sociais</h4>
+		
+					<a href="#"><img src="imagem/twitter_5969020.png" style="width:15%;height:15%;margin-left:13%;"></a>
+					<a href="#"><img src="imagem/facebook_3670144.png" style="width:15%;height:15%;margin-left:13%;"></a>
+					<a href="#"><img src="imagem/instagram_3955024.png" style="width:15%;height:15%;margin-left:13%;"></a>
+			
+			</div>
+
+			<div class="card1">
+				<h3>Sobre nós</h3>
+				<p>Somos uma empresa que tem o compromisso de trazer os melhores preços aos nossos clientes, com produtos de alta qualidade e conforto.</p>
+			</div>
+
+      	</div>
+
     </div>
     
     <div class="rodape">
 
-		<div class="flex-container3">
-			<img src="imagem/AdoneShoes1.png" style="width:12%;height: auto;">
-			<div class="texto1">Site feito por Adônes O. do Nascimento</div>
+		<div class="flex-container1">
+			<img src="imagem/AdoneShoes1.png" style="max-width:150px;height: auto;">
+
+			<div class="texto1">Site feito por Adônes O. do Nascimento.</div><p>
+			<div class="texto1">Este site foi desenvolvido para fins acadêmicos.</div><p>
+			<div class="texto1">AdoneShoes &trade; 2023-2023</div>
+
     	</div>
 		
 	</div>
